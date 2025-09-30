@@ -1,23 +1,23 @@
 [gd_scene load_steps=9 format=3 uid="uid://cqttxy3ivrq2o"]
 
-[ext_resource type="Texture2D" uid="uid://dd2qc2utm2tyk" path="res://Assets/jackn sprites.png" id="1_2d7v5"]
-[ext_resource type="Script" uid="uid://ddp5je6y4ygbv" path="res://Scripts/jack.gd" id="1_aaj3m"]
+[ext_resource type="Texture2D" uid="uid://dt6cw0p61eg4x" path="res://Assets/jackn sprites-export.png" id="1_2d7v5"]
+[ext_resource type="Script" uid="uid://dy4gc5f4i2a5r" path="res://Scripts/movement.gd" id="1_aaj3m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aaj3m"]
 atlas = ExtResource("1_2d7v5")
-region = Rect2(0, 0, 32, 32)
+region = Rect2(0, 0, 32, 42)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tx13g"]
 atlas = ExtResource("1_2d7v5")
-region = Rect2(32, 0, 32, 32)
+region = Rect2(32, 0, 32, 42)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l3vcb"]
 atlas = ExtResource("1_2d7v5")
-region = Rect2(64, 0, 32, 32)
+region = Rect2(64, 0, 32, 42)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hcxrc"]
 atlas = ExtResource("1_2d7v5")
-region = Rect2(96, 0, 32, 32)
+region = Rect2(96, 0, 32, 42)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wv61q"]
 animations = [{
@@ -35,25 +35,23 @@ animations = [{
 "texture": SubResource("AtlasTexture_hcxrc")
 }],
 "loop": true,
-"name": &"idle",
+"name": &"default",
 "speed": 7.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7t7p4"]
-radius = 3.0
-height = 16.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aaj3m"]
+radius = 4.0
+height = 22.0
 
-[node name="Jack" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D"]
 script = ExtResource("1_aaj3m")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, -16)
+position = Vector2(-7, -11)
 sprite_frames = SubResource("SpriteFrames_wv61q")
-animation = &"idle"
-autoplay = "idle"
-frame = 3
-frame_progress = 0.6575047
+autoplay = "default"
+frame_progress = 0.91745985
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8)
-shape = SubResource("CapsuleShape2D_7t7p4")
+position = Vector2(-6, -11)
+shape = SubResource("CapsuleShape2D_aaj3m")
