@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cqttxy3ivrq2o"]
 
-[ext_resource type="Texture2D" uid="uid://dt6cw0p61eg4x" path="res://Assets/jackn sprites-export.png" id="1_2d7v5"]
+[ext_resource type="Texture2D" uid="uid://dt6cw0p61eg4x" path="res://Assets/My assets/jackn sprites-export.png" id="1_2d7v5"]
 [ext_resource type="Script" uid="uid://dy4gc5f4i2a5r" path="res://Scripts/movement.gd" id="1_aaj3m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aaj3m"]

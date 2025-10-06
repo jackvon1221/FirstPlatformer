@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dt6cw0p61eg4x"
-path="res://.godot/imported/jackn sprites-export.png-a4a03cdced279f759a038b6de469a9ef.ctex"
+uid="uid://c8uu1aishskpv"
+path="res://.godot/imported/saveme1.png-3ec20f4c981ba760d89a7b6caa1d9893.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/jackn sprites-export.png"
-dest_files=["res://.godot/imported/jackn sprites-export.png-a4a03cdced279f759a038b6de469a9ef.ctex"]
+source_file="res://Assets/My assets/saveme1.png"
+dest_files=["res://.godot/imported/saveme1.png-3ec20f4c981ba760d89a7b6caa1d9893.ctex"]
 
 [params]
 

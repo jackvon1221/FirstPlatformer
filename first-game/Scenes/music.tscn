@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm1osifiw1hxq"]
+
+[ext_resource type="AudioStream" uid="uid://l1pqg3soajov" path="res://Assets/My assets/skate gun theme music.mp3" id="1_fbmny"]
+
+[node name="music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_fbmny")
+autoplay = true
+bus = &"Music"

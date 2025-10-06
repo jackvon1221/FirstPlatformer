@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cqttxy3ivrq2o" path="res://Scenes/jack.tscn" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://bmgiqa15g3rb7" path="res://Assets/Brackeys Assets/sprites/world_tileset.png" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://dhqj26is1makq" path="res://Scenes/platform.tscn" id="2_wrm1d"]
-[ext_resource type="Texture2D" uid="uid://luv5idb81mn5" path="res://Assets/Lisa.png" id="4_3dryh"]
+[ext_resource type="Texture2D" uid="uid://luv5idb81mn5" path="res://Assets/My assets/Lisa.png" id="4_3dryh"]
 [ext_resource type="PackedScene" uid="uid://7anp731eng1s" path="res://Scenes/coin.tscn" id="5_wowpa"]
 [ext_resource type="PackedScene" uid="uid://dllyylmtn83xf" path="res://Scenes/slime.tscn" id="6_1l0tm"]
 [ext_resource type="PackedScene" uid="uid://bm3x8y2k74twl" path="res://Scenes/killzone.tscn" id="6_i6g32"]
@@ -220,6 +220,21 @@ _data = {
 &"move": SubResource("Animation_wrm1d")
 }
 
+[sub_resource type="Animation" id="Animation_1l0tm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(19, 171)]
+}
+
 [sub_resource type="Animation" id="Animation_i6g32"]
 resource_name = "move"
 loop_mode = 2
@@ -234,21 +249,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(19, 171), Vector2(78, 171)]
-}
-
-[sub_resource type="Animation" id="Animation_1l0tm"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(19, 171)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_v158k"]
