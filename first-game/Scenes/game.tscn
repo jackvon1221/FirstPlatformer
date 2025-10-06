@@ -216,8 +216,7 @@ _data = {
 &"move": SubResource("Animation_wrm1d")
 }
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1l0tm"]
-distance = 2.0
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_i6g32"]
 
 [node name="Game" type="Node2D"]
 
@@ -271,9 +270,9 @@ position = Vector2(216, 120)
 [node name="COIN5" parent="." instance=ExtResource("5_wowpa")]
 position = Vector2(229, 120)
 
-[node name="Killzone" parent="." instance=ExtResource("6_i6g32")]
-position = Vector2(-58, -47)
+[node name="killzone" parent="." instance=ExtResource("6_i6g32")]
+position = Vector2(-10, 170)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(22, 216)
-shape = SubResource("WorldBoundaryShape2D_1l0tm")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
+position = Vector2(-25, 2)
+shape = SubResource("WorldBoundaryShape2D_i6g32")
