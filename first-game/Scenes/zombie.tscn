@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bpbk21dhrvw4u"]
+[gd_scene load_steps=10 format=3 uid="uid://bpbk21dhrvw4u"]
 
 [ext_resource type="Texture2D" uid="uid://dac4tse2qmes5" path="res://Assets/My assets/zombieanimated.png" id="1_h3kin"]
+[ext_resource type="Script" uid="uid://cpgqoyh6ajs1n" path="res://Scripts/zombie.gd" id="1_iyl7r"]
 [ext_resource type="PackedScene" uid="uid://bm3x8y2k74twl" path="res://Scenes/killzone.tscn" id="2_n70j1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n70j1"]
@@ -44,6 +45,7 @@ radius = 56.440674
 height = 270.91528
 
 [node name="zombie" type="CharacterBody2D"]
+script = ExtResource("1_iyl7r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-149, 165)
