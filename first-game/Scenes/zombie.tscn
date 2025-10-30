@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://bpbk21dhrvw4u"]
+
+[ext_resource type="Texture2D" uid="uid://dac4tse2qmes5" path="res://Assets/My assets/zombieanimated.png" id="1_h3kin"]
+[ext_resource type="PackedScene" uid="uid://bm3x8y2k74twl" path="res://Scenes/killzone.tscn" id="2_n70j1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n70j1"]
+atlas = ExtResource("1_h3kin")
+region = Rect2(0, 0, 333, 333)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iyl7r"]
+atlas = ExtResource("1_h3kin")
+region = Rect2(333, 0, 333, 333)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vy0uf"]
+atlas = ExtResource("1_h3kin")
+region = Rect2(666, 0, 333, 333)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2xga"]
+atlas = ExtResource("1_h3kin")
+region = Rect2(999, 0, 333, 333)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4slyf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n70j1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iyl7r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vy0uf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2xga")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n70j1"]
+radius = 56.440674
+height = 270.91528
+
+[node name="zombie" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-149, 165)
+scale = Vector2(0.08858858, 0.08858858)
+sprite_frames = SubResource("SpriteFrames_4slyf")
+autoplay = "default"
+frame = 1
+frame_progress = 0.402381
+
+[node name="killzone" parent="AnimatedSprite2D" instance=ExtResource("2_n70j1")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/killzone"]
+position = Vector2(0, 11.2881365)
+shape = SubResource("CapsuleShape2D_n70j1")

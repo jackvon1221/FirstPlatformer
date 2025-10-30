@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bpjte6hdjl6qn"]
+[gd_scene load_steps=18 format=3 uid="uid://bpjte6hdjl6qn"]
 
 [ext_resource type="PackedScene" uid="uid://cqttxy3ivrq2o" path="res://Scenes/jack.tscn" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://bmgiqa15g3rb7" path="res://Assets/Brackeys Assets/sprites/world_tileset.png" id="2_qxrlw"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://7anp731eng1s" path="res://Scenes/coin.tscn" id="5_wowpa"]
 [ext_resource type="PackedScene" uid="uid://dllyylmtn83xf" path="res://Scenes/slime.tscn" id="6_1l0tm"]
 [ext_resource type="PackedScene" uid="uid://bm3x8y2k74twl" path="res://Scenes/killzone.tscn" id="6_i6g32"]
+[ext_resource type="PackedScene" uid="uid://bpbk21dhrvw4u" path="res://Scenes/zombie.tscn" id="8_v158k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wrm1d"]
 texture = ExtResource("2_qxrlw")
@@ -366,3 +367,6 @@ position = Vector2(263, 117)
 
 [node name="Slime" parent="." instance=ExtResource("6_1l0tm")]
 position = Vector2(-186, 84)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("8_v158k")]
+position = Vector2(-73, -82)
